@@ -4,6 +4,18 @@ const mysql = require("mysql");
 const inquirer = require("inquirer");
 const db = require("./db");
 const colors = require("colors")
+const express = require("express");
+const cTable = require("console.table");
+const { response } = require("express");
+
+// updating to put my connection here: 
+const connection = mysql.createConnection({
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: "Fatty2020",
+    database: "employeetracker1"
+});
 // template:
 // From https://www.npmjs.com/package/inquirer
 // var inquirer = require('inquirer');
