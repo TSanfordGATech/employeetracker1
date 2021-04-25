@@ -9,12 +9,6 @@
 
   *[Usage Rights](#usage)
 
-  *[Credits](#credits)
-
-  *[License](#license)
-
-  *[Badges](#badges)
-
   *[Contributors](#contributing)
 
   *[Min requirements](#MinimumRequirements)
@@ -23,7 +17,7 @@
   Tori.danielle.clark91@gmail.com or https://github.com/TSanfordGATech
   
   # Link
-
+  https://github.com/TSanfordGATech/employeetracker1
   
   # Description
   Developers are often tasked with creating interfaces that make it easy for non-developers to view and interact with information stored in databases. Often these interfaces are known as **C**ontent **M**anagement **S**ystems. In this homework assignment, your challenge is to architect and build a solution for managing a company's employees using node, inquirer, and MySQL.
@@ -34,10 +28,14 @@
     So that I can organize and plan my business
 
   # Install
-  My SQL - npm install mysql
-  Inquirer - npm install inquirer
-  Jest - npm install --save-dev jest
-  
+     "console.table": "^0.10.0",
+      "express": "^4.17.1",
+      "inquirer": "^7.3.2",
+      "mysql": "^2.18.1",
+      "colors": "^1.4.0",
+    },
+    "devDependencies": {
+        "jest": "^26.6.3"
   # Usage Rights
   Before starting, run NPM Install in the terminal for index.js. Once that is completed, run node index.js in the terminal. Questions will then populate for the user to answer. Answer each one to the best of your ability. Once done, a read me file will populate. The console log will tell the user if there are any errors or if the document successfully generated. 
   

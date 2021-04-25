@@ -2,7 +2,7 @@
 // Database is going through mysql
 const mysql = require("mysql");
 const inquirer = require("inquirer");
-const db = require("..db");
+const db = require("./db");
 const colors = require("colors")
 // template:
 // From https://www.npmjs.com/package/inquirer
@@ -427,14 +427,10 @@ function continueOption() {
         }
     })
 }
-
 exports.firstQ = firstQ
-
 // Bonus points if you're able to:
 //   * Update employee managers --- Did this one 
 //   * View employees by manager
 //   * Delete departments, roles, and employees
 //   * View the total utilized budget of a department -- ie the combined salaries of all employees in that department
 // IDK what the last one is - a number I make up or am I missing that info? 
-
-

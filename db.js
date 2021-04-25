@@ -2,7 +2,7 @@
 // db will be mysql
 const mysql = require("mysql");
 // where it will get the prompts from
-const prompts = require("./library/prompt");
+const prompts = require("./prompt");
 // make connection
 const connection = mysql.createConnection({
     host: "localhost",
