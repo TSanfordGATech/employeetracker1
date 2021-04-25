@@ -28,8 +28,15 @@
   # Description
   Developers are often tasked with creating interfaces that make it easy for non-developers to view and interact with information stored in databases. Often these interfaces are known as **C**ontent **M**anagement **S**ystems. In this homework assignment, your challenge is to architect and build a solution for managing a company's employees using node, inquirer, and MySQL.
 
+    The User Story: 
+    As a business owner
+    I want to be able to view and manage the departments, roles, and employees in my company
+    So that I can organize and plan my business
+
   # Install
-  Inquirer & Node 
+  My SQL - npm install mysql
+  Inquirer - npm install inquirer
+  Jest - npm install --save-dev jest
   
   # Usage Rights
   Before starting, run NPM Install in the terminal for index.js. Once that is completed, run node index.js in the terminal. Questions will then populate for the user to answer. Answer each one to the best of your ability. Once done, a read me file will populate. The console log will tell the user if there are any errors or if the document successfully generated. 
@@ -62,57 +69,8 @@
 
 
 <!-- Remove before submitting  -->
-## Instructions
 
-Design the following database schema containing three tables:
 
-![Database Schema](Assets/schema.png)
-
-* **department**:
-
-  * **id** - INT PRIMARY KEY
-  * **name** - VARCHAR(30) to hold department name
-
-* **role**:
-
-  * **id** - INT PRIMARY KEY
-  * **title** -  VARCHAR(30) to hold role title
-  * **salary** -  DECIMAL to hold role salary
-  * **department_id** -  INT to hold reference to department role belongs to
-
-* **employee**:
-
-  * **id** - INT PRIMARY KEY
-  * **first_name** - VARCHAR(30) to hold employee first name
-  * **last_name** - VARCHAR(30) to hold employee last name
-  * **role_id** - INT to hold reference to role employee has
-  * **manager_id** - INT to hold reference to another employee that manages the employee being Created. This field may be null if the employee has no manager
-  
-Build a command-line application that at a minimum allows the user to:
-
-  * Add departments, roles, employees
-
-  * View departments, roles, employees
-
-  * Update employee roles
-
-Bonus points if you're able to:
-
-  * Update employee managers
-
-  * View employees by manager
-
-  * Delete departments, roles, and employees
-
-  * View the total utilized budget of a department -- ie the combined salaries of all employees in that department
-
-We can frame this challenge as follows:
-
-```
-As a business owner
-I want to be able to view and manage the departments, roles, and employees in my company
-So that I can organize and plan my business
-```
 
 How do you deliver this? Here are some guidelines:
 
@@ -128,29 +86,8 @@ How do you deliver this? Here are some guidelines:
 
 ![Employee Tracker](Assets/employee-tracker.gif)
 
-### Hints
-
-* You may wish to include a `seed.sql` file to pre-populate your database. This will make development of individual features much easier.
-
-* Focus on getting the basic functionality completed before working on more advanced features.
-
-* Review the week's activities for a refresher on MySQL.
-
-* Check out [SQL Bolt](https://sqlbolt.com/) for some extra MySQL help.
 
 
-
-## Bonus
-
-* The command-line application should allow users to:
-
-  * Update employee managers
-
-  * View employees by manager
-
-  * Delete departments, roles, and employees
-
-  * View the total utilized budget of a department -- ie the combined salaries of all employees in that department
 
 ## Commit Early and Often
 

@@ -2,14 +2,15 @@
 // db will be mysql
 const mysql = require("mysql")
 // where it will get the prompts from
-const prompts = require("./library.prompts.js")
+const prompts = require("./library.prompt.js")
+
 
 // make connection
 const connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
-    password: "password1",
+    password: "Fatty2020",
     database: "employeetracker1"
 });
 

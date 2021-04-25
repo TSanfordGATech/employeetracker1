@@ -1,13 +1,11 @@
 -- make the tables
-create database employeetracker1;
-use employeetracker1
-
+CREATE DATABASE employeetracker1;
+USE employeetracker1;
 -- tables from read me:
 -- ![Database Schema](Assets/schema.png)
 -- * **department**:
 --   * **id** - INT PRIMARY KEY
 --   * **name** - VARCHAR(30) to hold department name
-
 CREATE TABLE department (
     id INT AUTO_INCREMENT,
     name VARCHAR(30) NOT NULL,
@@ -18,7 +16,6 @@ CREATE TABLE department (
 --   * **title** -  VARCHAR(30) to hold role title
 --   * **salary** -  DECIMAL to hold role salary
 --   * **department_id** -  INT to hold reference to department role belongs to
-
 CREATE TABLE role (
     id INT AUTO_INCREMENT,
     title VARCHAR(30) NOT NULL,
