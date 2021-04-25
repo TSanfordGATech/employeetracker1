@@ -4,16 +4,14 @@ const mysql = require("mysql");
 const inquirer = require("inquirer");
 const db = require("../db");
 const colors = require("colors")
-
 // Build a command-line application that at a minimum allows the user to:
 // Determine what action they wish to complete: 
-
-function promptone() {
+function firstQ() {
     inquirer.prompt([
         {
             type: "list",
             message: "would you like to add, view, or modify?",
-            name: "firstprompta"
+            name: "firstQChoice",
         }
     ]).then(function (deptAnswers) {
         if (deptAnswers.firstQChoice === "add") {
@@ -25,8 +23,26 @@ function promptone() {
         }
     });
 }
-
 //   * Add departments, roles, employees
+// user selected add - so from read me we need to be able to give them the ability to add in and select which one
+function addWhat() {
+    inquirer.prompt([
+        {
+            type: "list",
+            message: "what would you like to add?",
+            name: "addWhatChoice",
+            choices: ["Department", "Role", "Employee"]
+        }
+    ]).then(function (addWhatAnswers) {
+        if (addWhatAnswers.addWhatChoice === "Department") {
+            addDept()
+        } else if (addWhatAnswers.addWhatChoice === "Role") {
+            addRole()
+        } else {
+            addEmployee();
+        }
+    })
+}
 //   * View departments, roles, employees
 //   * Update employee roles
 
