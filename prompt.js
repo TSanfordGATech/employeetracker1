@@ -41,6 +41,7 @@ function firstQ() {
             type: "list",
             message: "would you like to add, view, or modify?",
             name: "firstQChoice",
+            choices: ["add", "view", "modify"]
         }
     ]).then(function (deptAnswers) {
         if (deptAnswers.firstQChoice === "add") {
